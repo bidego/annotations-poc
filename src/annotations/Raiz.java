@@ -1,10 +1,9 @@
 package annotations;
 
-import annotations.logger.Logger;
-import annotations.logger.LoggerFactory;
+import java.util.logging.Logger;
 
 public class Raiz {
-    Logger logger = LoggerFactory.getLogger(Raiz.class);
+    Logger logger = Logger.getLogger(Raiz.class.getName());
     @Ejecutar
     public void testRaiz() {
         logger.info("Ejecutando test raiz ");

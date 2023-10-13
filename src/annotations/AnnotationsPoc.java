@@ -2,15 +2,14 @@ package annotations;
 
 import java.lang.reflect.Method;
 import java.util.List;
+import java.util.logging.Logger;
 
 import annotations.helper.Helper;
-import annotations.logger.Logger;
-import annotations.logger.LoggerFactory;
 
 public class AnnotationsPoc {
 
     public static void main(String[] args) {
-        Logger logger = LoggerFactory.getLogger(AnnotationsPoc.class);
+        Logger logger = Logger.getLogger(AnnotationsPoc.class.getName());
 
         logger.info("Iniciando POC Annotations");
         Programa programa = new Programa();

@@ -1,10 +1,9 @@
 package annotations;
 
-import annotations.logger.Logger;
-import annotations.logger.LoggerFactory;
+import java.util.logging.Logger;
 
 public class Programa extends Raiz {
-    Logger logger = LoggerFactory.getLogger(Programa.class);
+    private static Logger logger = Logger.getLogger(Programa.class.getName());
     
     @Ejecutar
     public void testCast() {
